@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Etch-a-Sketch</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="index.js" defer></script>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="options">
+      <form id="coloringStyle" action="">
+        <fieldset>
+          <legend>Coloring Style</legend>
+          <label>
+            <input
+              checked
+              type="radio"
+              name="colorOption"
+              value="default"
+              id="default"
+            />
+            Default
+          </label>
+          <label>
+            <input type="radio" name="colorOption" value="random" id="random" />
+            Random
+          </label>
+          <label>
+            <input type="radio" name="colorOption" value="shading" id="shading" />
+            Shading
+          </label>
+        </fieldset>
+      </form>
+      <button id="reset">Reset</button>
+    </div>
+    <div class="pixelContainer">
+      <div class="pixel"></div>
+    </div>
+  </body>
 </html>
